@@ -1,0 +1,9 @@
+customer_id,age,income,city
+101,25,30000,Delhi
+102,32,45000,Mumbai
+103,,50000,Delhi
+104,28,35000,Jaipur
+104,28,35000,Jaipur
+105,45,,Lucknow
+106,150,60000,Mumbai
+107,24,28000,Delhi
