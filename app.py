@@ -1,4 +1,4 @@
-
+﻿
 import json
 
 import numpy as np
@@ -7,12 +7,12 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title="DriftPulse AI",
-    page_icon="📊",
+    page_title="DataLens",
+    page_icon="ðŸ“Š",
     layout="wide",
 )
 
-st.title("DriftPulse AI")
+st.title("DataLens")
 st.caption("Data Quality, Dataset Comparison and Drift Monitoring")
 st.write(
     "Compare datasets, identify quality issues, detect distribution "
@@ -231,7 +231,7 @@ try:
         report_results.append(entry)
 
     report = {
-        "project": "DriftPulse AI",
+        "project": "DataLens",
         "reference_file": reference_file.name,
         "current_file": current_file.name,
         "rows_analyzed": {
@@ -257,7 +257,7 @@ try:
     st.download_button(
         "Download Full Report (JSON)",
         data=json.dumps(report, indent=4, allow_nan=False),
-        file_name="driftpulse_report.json",
+        file_name="datalens_report.json",
         mime="application/json",
     )
 
@@ -269,3 +269,4 @@ try:
 
 except (OSError, UnicodeError, pd.errors.ParserError, ValueError) as error:
     st.error(f"Unable to analyze the uploaded datasets: {error}")
+

@@ -1,4 +1,4 @@
-\# DriftPulse AI
+# DataLens — Data Quality & Drift Analytics
 
 
 
@@ -139,4 +139,5 @@ These thresholds are heuristic indicators, not formal statistical tests.
 
 
 This project is available for educational and portfolio use.
+
 
